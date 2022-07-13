@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+-->
+  <head>
+    <title>Fibonacci-Javascript</title>
+  </head>
+
+
+  <body>
+
+<!-- Script donde se creará toda la estructura de la secuencia Fibonacci -->
+    <script language=javascript>
+
+
+      var a = 1;
+
+      var b = 1;
+
+      var c;
+
+
+
+      document.write("<h3>");       
+
+
+      var numeroDeElementos = prompt("Ingresa la cantidad de números Fibonacci deseados:");
+
+
+                document.write("La   Serie es:");
+
+                document.write("<br>");
+
+                document.write(a   + "<br>");
+
+                document.write(b   + "<br>");
+
+                c   = b + a;
+
+                document.write(c   + "<br>");
+
+                /*For que ayudara a imprimir la secuencia Fibonacci, la variable "numeroDeElementos" sera el indicador
+                que el usuario indica al inicio, se imprimira la secuencia hasta el  numero indicado */
+       for(var i = 3; i <= numeroDeElementos-1;   i++)
+           {
+
+                a = b;
+
+
+                b = c;
+
+
+                c = b + a;
+
+
+                document.write(c +   "<br>");
+
+           }                                          
+
+           document.write("Escribiste "+numeroDeElementos+" por tanto se han impreso los primeros "+numeroDeElementos+" numeros Fibonacci" +   "<br>");
+
+        </script>
+
+ <!--  -->
+<a  href="fibonacci.html"><font   color="red">Repetir</font></a>
+
+
+    </body>
+
+
+
+</html>
